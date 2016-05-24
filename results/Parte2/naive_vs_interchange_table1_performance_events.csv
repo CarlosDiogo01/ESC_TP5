@@ -1,0 +1,23 @@
+
+EVENT-NAME,				NAIVE	,		INTERCHANGE
+cpu-cycles,            527552274	,		380922615			
+instructions,          900940923	,		863623830
+cache-references,        8019136	,		   360860
+cache-misses,              40877	,		    15738
+branch-instructions,   133968091	,		125012803
+branch-misses,            276830	,		   254911
+bus-cycles,                    0	,		        0
+L1-dcache-loads,       260865106	,		240681375
+L1-dcache-load-misses,  54727408	,		  7249025
+L1-dcache-stores,        9768780	,		123970738
+L1-dcache-store-misses,   288102	,		    99594
+LLC-loads,               7319660	,		   272062
+LLC-load-misses,            4267	,		     1877
+LLC-stores,               112386	,		   173103
+LLC-store-misses,          11665	,		     5816
+dTLB-load-misses ,          2742	,		    41999
+dTLB-store-misses ,          205 	,	     1256
+iTLB-load-misses   ,         573	,		      568
+branch-loads        ,  128566763	,		135213343
+branch-load-misses   ,   6240536	,		  5758882
+
