@@ -1,4 +1,4 @@
-EVENT-NAME,						NAIVE	,		INTERCHANGE
+RATIO OR RATE,						NAIVE	,		INTERCHANGE
 Elapsed time (seconds), 		 0.192241575		,	0.146865280		
 Instructions per cycle, 			1.7077756412	, 10.672218514			
 L1 cache miss ratio, 					0.2097919834, 	0.03011876179		

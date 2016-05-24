@@ -1,0 +1,92 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+# Samples: 1M of event 'cpu-cycles'
+# Event count (approx.): 165676200000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                                 
+# ........  ............  ...........  .................  .......................................
+#
+    99.40%       1646844  large_naive  large_naive        [.] run_no_events                      
+     0.24%          4047  large_naive  [kernel.kallsyms]  [k] hrtimer_interrupt                  
+
+
+# Samples: 465K of event 'instructions'
+# Event count (approx.): 46564900000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                                 
+# ........  ............  ...........  .................  .......................................
+#
+    99.20%        461944  large_naive  large_naive        [.] run_no_events                      
+     0.17%           770  large_naive  large_naive        [.] initialize_matrices                
+
+
+# Samples: 57K of event 'cache-references'
+# Event count (approx.): 5713500000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                         
+# ........  ............  ...........  .................  ...............................
+#
+    99.87%         57059  large_naive  large_naive        [.] run_no_events              
+
+
+# Samples: 49K of event 'cache-misses'
+# Event count (approx.): 4904500000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                                 
+# ........  ............  ...........  .................  .......................................
+#
+    99.94%         49014  large_naive  large_naive        [.] run_no_events                      
+
+
+# Samples: 57K of event 'LLC-loads'
+# Event count (approx.): 5779600000
+
+#
+# Overhead       Samples  Command      Shared Object      Symbol                  
+# ........  ............  ...........  .................  ........................
+#
+    99.95%         57765  large_naive  large_naive        [.] run_no_events       
+
+
+# Samples: 49K of event 'LLC-load-misses'
+# Event count (approx.): 4932300000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                  
+# ........  ............  ...........  .................  ........................
+#
+    99.99%         49317  large_naive  large_naive        [.] run_no_events       
+
+
+# Samples: 24  of event 'dTLB-load-misses'
+# Event count (approx.): 2400000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                      
+# ........  ............  ...........  .................  ............................
+#
+    87.50%            21  large_naive  large_naive        [.] run_no_events           
+     4.17%             1  large_naive  [kernel.kallsyms]  [k] apic_timer_interrupt    
+     4.17%             1  large_naive  [kernel.kallsyms]  [k] intel_pmu_nhm_enable_all
+     4.17%             1  large_naive  [kernel.kallsyms]  [k] scheduler_tick          
+
+
+# Samples: 39K of event 'branches'
+# Event count (approx.): 3958200000
+#
+# Overhead       Samples  Command      Shared Object      Symbol                                 
+# ........  ............  ...........  .................  .......................................
+#
+    98.86%         39131  large_naive  large_naive        [.] run_no_events                      
+     0.25%            99  large_naive  large_naive        [.] initialize_matrices                
+     0.15%            61  large_naive  libc-2.12.so       [.] __random_r                         
+
+
+# Samples: 22  of event 'branch-misses'
+# Event count (approx.): 2200000
+#
+
+# Overhead       Samples  Command      Shared Object      Symbol              
+# ........  ............  ...........  .................  ....................
+#
+    90.91%            20  large_naive  large_naive        [.] run_no_events   
+     4.55%             1  large_naive  [kernel.kallsyms]  [k] cpumask_next_and
+     4.55%             1  large_naive  [kernel.kallsyms]  [k] x86_pmu_disable 

@@ -1,0 +1,11 @@
+EVENT OR METRIC,		LARGE_NAIVE		,	LARGE_INTERCHANGED
+Elapsed time, 				 		,		
+instructions,		    	46564900000		,	50737800000		
+cycles, 			165676200000		,	15914700000		
+cache-references, 		5713500000	 	,	18400000	
+cache-misses, 			4904500000		,	14700000	
+LLC-loads, 			5779600000	 	,	18900000	
+LLC-load-misses, 		4932300000		,	15900000	
+dTLB-load-misses, 		2400000			,	200000	
+branches ,			3958200000	 	,	3810900000	
+branch-misses, 			2200000			,	1800000	

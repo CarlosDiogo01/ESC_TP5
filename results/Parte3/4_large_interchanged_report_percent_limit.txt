@@ -1,0 +1,109 @@
+[a59905@compute-431-10 large_interchanged_src]$ perf report -n --no-source --stdio --percent-limit 0.1
+# To display the perf.data header info, please use --header/--header-only options.
+#
+# Samples: 159K of event 'cpu-cycles'
+# Event count (approx.): 15914700000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                            
+# ........  ............  ...............  ..................  ..................................
+#
+    99.42%        158229  large_interchan  large_interchanged  [.] run_no_events                 
+
+
+# Samples: 507K of event 'instructions'
+# Event count (approx.): 50737800000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                            
+# ........  ............  ...............  ..................  ..................................
+#
+    99.62%        505466  large_interchan  large_interchanged  [.] run_no_events                 
+     0.14%           724  large_interchan  large_interchanged  [.] initialize_matrices           
+
+
+# Samples: 184  of event 'cache-references'
+# Event count (approx.): 18400000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                   
+# ........  ............  ...............  ..................  .........................
+#
+    90.76%           167  large_interchan  large_interchanged  [.] run_no_events        
+     2.72%             5  large_interchan  [kernel.kallsyms]   [k] clear_page_c         
+     1.09%             2  large_interchan  [kernel.kallsyms]   [k] ktime_get            
+     1.09%             2  large_interchan  [kernel.kallsyms]   [k] perf_event_task_tick 
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] acct_update_integrals
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] find_get_pages_tag   
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] hrtimer_interrupt    
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] jiffies_to_timeval   
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] rcu_bh_qs            
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] scheduler_tick       
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] update_cfs_shares    
+     0.54%             1  large_interchan  [kernel.kallsyms]   [k] update_cpu_load      
+# Samples: 147  of event 'cache-misses'
+# Event count (approx.): 14700000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                  
+# ........  ............  ...............  ..................  ........................
+#
+    93.88%           138  large_interchan  large_interchanged  [.] run_no_events       
+     4.08%             6  large_interchan  [kernel.kallsyms]   [k] clear_page_c        
+     0.68%             1  large_interchan  [kernel.kallsyms]   [k] perf_event_task_tick
+     0.68%             1  large_interchan  [kernel.kallsyms]   [k] radix_tree_tag_set  
+     0.68%             1  large_interchan  [kernel.kallsyms]   [k] try_to_wake_up      
+
+
+# Samples: 189  of event 'LLC-loads'
+# Event count (approx.): 18900000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                  
+# ........  ............  ...............  ..................  ........................
+#
+    95.24%           180  large_interchan  large_interchanged  [.] run_no_events       
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] __lookup_tag        
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] apic_timer_interrupt
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] ktime_get           
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] native_read_tsc     
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] perf_ctx_lock       
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] raise_softirq       
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] rcu_process_gp_end  
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] scheduler_tick      
+     0.53%             1  large_interchan  [kernel.kallsyms]   [k] update_cfs_shares   
+
+
+# Samples: 159  of event 'LLC-load-misses'
+# Event count (approx.): 15900000
+#
+# Overhead       Samples  Command          Shared Object       Symbol             
+# ........  ............  ...............  ..................  ...................
+#
+    99.37%           158  large_interchan  large_interchanged  [.] run_no_events  
+     0.63%             1  large_interchan  [kernel.kallsyms]   [k] native_read_tsc
+
+# Samples: 2  of event 'dTLB-load-misses'
+# Event count (approx.): 200000
+#
+# Overhead       Samples  Command          Shared Object       Symbol           
+# ........  ............  ...............  ..................  .................
+#
+    50.00%             1  large_interchan  [kernel.kallsyms]   [k] do_softirq   
+    50.00%             1  large_interchan  large_interchanged  [.] run_no_events
+
+
+# Samples: 38K of event 'branches'
+# Event count (approx.): 3810900000
+#
+# Overhead       Samples  Command          Shared Object       Symbol                        
+# ........  ............  ...............  ..................  ..............................
+#
+    99.41%         37884  large_interchan  large_interchanged  [.] run_no_events             
+     0.23%            87  large_interchan  large_interchanged  [.] initialize_matrices       
+     0.14%            53  large_interchan  libc-2.12.so        [.] __random_r                
+
+
+# Samples: 18  of event 'branch-misses'
+# Event count (approx.): 1800000
+#
+# Overhead       Samples  Command          Shared Object       Symbol           
+# ........  ............  ...............  ..................  .................
+#
+   100.00%            18  large_interchan  large_interchanged  [.] run_no_events
+

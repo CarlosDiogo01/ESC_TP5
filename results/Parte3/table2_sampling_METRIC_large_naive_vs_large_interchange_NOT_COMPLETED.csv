@@ -1,0 +1,11 @@
+METRIC/NSAMPLES,	LARGE_NAIVE		, 		LARGE_INTERCHANGED
+Elapsed time, 					,			
+instructions, 			465K	samples		,			507K samples
+cycles, 			1M 	samples		,			159K samples
+cache-references, 		57K	samples	,			184 samples
+cache-misses, 			49K	samples	,			147 samples
+LLC-loads, 			57K	samples	,			189 samples
+LLC-load-misses, 		49K	samples	,			159 samples
+dTLB-load-misses, 		24	samples	,			2   samples
+branches, 			39K	samples	,			38K samples
+branch-misses, 			22	samples	,			18 samples
