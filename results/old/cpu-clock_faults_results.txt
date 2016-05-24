@@ -1,6 +1,0 @@
-Performance counter stats for './naive':
-
-        597.770162      cpu-clock (msec)                                            
-               845      faults                                                      
-
-       0.599597150 seconds time elapsed
