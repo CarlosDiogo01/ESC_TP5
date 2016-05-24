@@ -1,0 +1,17 @@
+[a59905@compute-431-10 Tutorial]$ perf record -e cpu-clock --freq=8000 ./naive
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.066 MB perf.data (1506 samples) ]
+
+[a59905@compute-431-10 Tutorial]$ perf report --stdio --show-nr-samples --dsos=naive
+# To display the perf.data header info, please use --header/--header-only optio
+#
+# dso: naive
+# Samples: 1K of event 'cpu-clock'
+# Event count (approx.): 1506
+#
+# Overhead       Samples  Command  Symbol                 
+# ........  ............  .......  .......................
+#
+    94.82%          1428  naive    [.] multiply_matrices  
+     1.39%            21  naive    [.] initialize_matrices
+     0.33%             5  naive    [.] rand@plt           

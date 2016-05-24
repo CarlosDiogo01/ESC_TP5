@@ -1,0 +1,9 @@
+[a59905@search6 Tutorial]$ perf stat -e cpu-clock ./naive
+
+ Performance counter stats for './naive':
+
+        200.576975      cpu-clock (msec)                                            
+
+       0.210048750 seconds time elapsed
+
+

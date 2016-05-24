@@ -1,0 +1,10 @@
+[a59905@search6 Tutorial]$ perf stat -e cpu-clock,faults ./naive
+
+ Performance counter stats for './naive':
+
+        205.314389      cpu-clock (msec)                                            
+               844      faults                                                      
+
+       0.211833805 seconds time elapsed
+
+

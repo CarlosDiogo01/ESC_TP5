@@ -1,0 +1,58 @@
+[kernel.kallsyms] with build id 09b53ce5dfe09c7b1ad9473e1356d7d92
+ Percent |      Source code & Disassembly of naive for cpu-clock
+----------------------------------------------------------------
+         :
+         :
+         :
+         :      Disassembly of section .text:
+         :
+         :      00000000004007f4 <multiply_matrices>:
+         :      multiply_matrices():
+    0.00 :        4007f4:       push   %rbp
+    0.00 :        4007f5:       mov    %rsp,%rbp
+    0.00 :        4007f8:       movl   $0x0,-0x10(%rbp)
+    0.00 :        4007ff:       jmpq   4008b2 <multiply_matrices+
+    0.00 :        400804:       movl   $0x0,-0xc(%rbp)
+    0.00 :        40080b:       jmpq   4008a1 <multiply_matrices+
+    0.00 :        400810:       mov    $0x0,%eax
+    0.00 :        400815:       mov    %eax,-0x4(%rbp)
+    0.00 :        400818:       movl   $0x0,-0x8(%rbp)
+    0.00 :        40081f:       jmp    400875 <multiply_matrices+
+    6.68 :        400821:       mov    -0x10(%rbp),%edx
+    0.00 :        400824:       mov    -0x8(%rbp),%eax
+    0.00 :        400827:       cltq   
+    0.00 :        400829:       movslq %edx,%rdx
+    7.23 :        40082c:       imul   $0x1f4,%rdx,%rdx
+    0.00 :        400833:       lea    (%rdx,%rax,1),%rax
+    0.00 :        400837:       movss  0x7e9760(,%rax,4),%xmm1
+    0.59 :        400840:       mov    -0x8(%rbp),%edx
+    6.76 :        400843:       mov    -0xc(%rbp),%eax
+    0.00 :        400846:       cltq   
+    0.04 :        400848:       movslq %edx,%rdx
+    0.08 :        40084b:       imul   $0x1f4,%rdx,%rdx
+    6.72 :        400852:       lea    (%rdx,%rax,1),%rax
+    0.00 :        400856:       movss  0x6f5520(,%rax,4),%xmm0
+   15.43 :        40085f:       mulss  %xmm1,%xmm0
+   16.78 :        400863:       movss  -0x4(%rbp),%xmm1
+    3.76 :        400868:       addss  %xmm1,%xmm0
+   27.64 :        40086c:       movss  %xmm0,-0x4(%rbp)
+    7.90 :        400871:       addl   $0x1,-0x8(%rbp)
+    0.00 :        400875:       cmpl   $0x1f3,-0x8(%rbp)
+    0.00 :        40087c:       jle    400821 <multiply_matrices+
+    0.08 :        40087e:       mov    -0x10(%rbp),%edx
+    0.00 :        400881:       mov    -0xc(%rbp),%eax
+    0.00 :        400884:       cltq   
+    0.00 :        400886:       movslq %edx,%rdx
+    0.04 :        400889:       imul   $0x1f4,%rdx,%rdx
+    0.04 :        400890:       add    %rax,%rdx
+    0.04 :        400893:       mov    -0x4(%rbp),%eax
+    0.04 :        400896:       mov    %eax,0x6012e0(,%rdx,4)
+    0.13 :        40089d:       addl   $0x1,-0xc(%rbp)
+    0.00 :        4008a1:       cmpl   $0x1f3,-0xc(%rbp)
+    0.00 :        4008a8:       jle    400810 <multiply_matrices+
+    0.00 :        4008ae:       addl   $0x1,-0x10(%rbp)
+    0.00 :        4008b2:       cmpl   $0x1f3,-0x10(%rbp)
+    0.00 :        4008b9:       jle    400804 <multiply_matrices+
+    0.00 :        4008bf:       leaveq 
+    0.00 :        4008c0:       retq   
+

@@ -1,0 +1,9 @@
+[a59905@compute-431-10 Tutorial]$  perf stat -e cpu-cycles,instructions ./naive
+ 
+ Performance counter stats for './naive':
+
+         526356862      cpu-cycles               
+         908075549      instructions              #    1.73  insns per cycle        
+
+       0.185981235 seconds time elapsed
+

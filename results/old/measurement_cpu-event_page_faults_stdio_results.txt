@@ -1,0 +1,41 @@
+[kernel.kallsyms] with build id 09b53ce5dfe09c7b1ad9473e1356d7d922512e27 not found, continuing without s
+# To display the perf.data header info, please use --header/--header-only options.
+#
+# Samples: 2K of event 'cpu-clock'
+# Event count (approx.): 2401
+#
+# Overhead  Command  Shared Object      Symbol                 
+# ........  .......  .................  .......................
+#
+    98.54%  naive    naive              [.] multiply_matrices  
+     0.54%  naive    naive              [.] initialize_matrices
+     0.17%  naive    libc-2.12.so       [.] __initstate_r      
+     0.12%  naive    libc-2.12.so       [.] _L_unlock_119      
+     0.12%  naive    libc-2.12.so       [.] mrand48_r          
+     0.08%  naive    [kernel.kallsyms]  [k] 0xffffffff8127d387 
+     0.04%  naive    [kernel.kallsyms]  [k] 0xffffffff81125a09 
+     0.04%  naive    [kernel.kallsyms]  [k] 0xffffffff8112b492 
+     0.04%  naive    [kernel.kallsyms]  [k] 0xffffffff8114960d 
+     0.04%  naive    [kernel.kallsyms]  [k] 0xffffffff81150451 
+     0.04%  naive    [kernel.kallsyms]  [k] 0xffffffff81500982 
+     0.04%  naive    libc-2.12.so       [.] _L_lock_111        
+     0.04%  naive    libc-2.12.so       [.] _L_unlock_91       
+     0.04%  naive    libc-2.12.so       [.] __setstate_r       
+     0.04%  naive    libc-2.12.so       [.] 0x00000000000365f2 
+     0.04%  naive    naive              [.] rand@plt           
+
+
+# Samples: 22  of event 'faults'
+# Event count (approx.): 855
+#
+# Overhead  Command  Shared Object      Symbol                 
+# ........  .......  .................  .......................
+#
+    85.85%  naive    naive              [.] initialize_matrices
+    12.51%  naive    ld-2.12.so         [.] dl_main            
+     0.70%  naive    ld-2.12.so         [.] _dl_setup_hash     
+     0.35%  naive    ld-2.12.so         [.] _dl_start          
+     0.23%  naive    [kernel.kallsyms]  [k] 0xffffffff8127ed2f 
+     0.23%  naive    libc-2.12.so       [.] __memset_x86_64    
+     0.12%  naive    ld-2.12.so         [.] _start             
+

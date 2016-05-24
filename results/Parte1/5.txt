@@ -1,0 +1,27 @@
+[a59905@compute-431-10 Tutorial]$ perf report --stdio --dsos=naive,libc-2.12.so 
+[sep3_15] with build id 620e4745015536dc79601ea81a84247658144e14 not found, con
+# To display the perf.data header info, please use --header/--header-only optio
+#
+# Samples: 839  of event 'cpu-clock'
+# Event count (approx.): 839
+#
+# Overhead  Command  Shared Object  Symbol                 
+# ........  .......  .............  .......................
+#
+    93.92%  naive    naive          [.] multiply_matrices  
+     1.43%  naive    libc-2.12.so   [.] __random           
+     0.72%  naive    libc-2.12.so   [.] __random_r         
+     0.48%  naive    libc-2.12.so   [.] rand               
+     0.36%  naive    naive          [.] initialize_matrices
+     0.24%  naive    naive          [.] rand@plt           
+
+
+# Samples: 28  of event 'faults'
+# Event count (approx.): 869
+#
+# Overhead  Command  Shared Object  Symbol                        
+# ........  .......  .............  ..............................
+#
+    79.63%  naive    naive          [.] initialize_matrices       
+     8.29%  naive    libc-2.12.so   [.] _IO_file_init@@GLIBC_2.2.5
+
