@@ -1,5 +1,5 @@
 EVENT OR METRIC,		LARGE_NAIVE		,	LARGE_INTERCHANGED
-Elapsed time, 				 		,		
+Elapsed time, 			68.265376900	 	,	10.431300824	
 instructions,		    	46564900000		,	50737800000		
 cycles, 			165676200000		,	15914700000		
 cache-references, 		5713500000	 	,	18400000	
